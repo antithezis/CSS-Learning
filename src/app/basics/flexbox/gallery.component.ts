@@ -4,7 +4,42 @@ import { Component } from '@angular/core';
   selector: 'app-gallery',
   standalone: true,
   imports: [],
-  styleUrl: './gallery.component.css',
+  styles: [
+    `
+      .gallery {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 60px 0;
+      }
+
+      .gallery__title {
+        font-size: 2rem;
+        margin-bottom: 1.5em;
+      }
+
+      .gallery__container {
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .gallery__picture {
+        min-width: 200px;
+        /* flex-basis: 350px; */
+        /* flex-grow: 1; */
+        flex: 350px;
+      }
+
+      .gallery__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    `,
+  ],
   template: `
     <main class="gallery">
       <h2 class="gallery__title">Galeria de imagenes Flexbox</h2>
