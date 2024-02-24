@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { LandingPageComponent } from './basics/flexbox/landingPage.component';
+import { LandingPageComponent } from './basics/flexbox/landing-page.component';
 import { GalleryComponent } from './basics/flexbox/gallery.component';
 import { CardsComponent } from './basics/flexbox/cards.component';
 import { PricingComponent } from './basics/flexbox/pricing.component';

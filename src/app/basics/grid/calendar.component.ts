@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-gallery',
+  selector: 'app-calendar',
   standalone: true,
   imports: [],
   template: `
     <p>
-      gallery works!
+      calendar works!
     </p>
   `,
-  styleUrl: './gallery.component.css'
+  styles: ``
 })
-export class GalleryComponent {
+export class CalendarComponent {
 
 }
