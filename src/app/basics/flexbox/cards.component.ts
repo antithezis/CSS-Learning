@@ -4,52 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-cards',
   standalone: true,
   imports: [],
-  styles: [
-    `
-      .card {
-        display: flex;
-        width: 90%;
-        margin: 0 auto;
-        min-height: 100vh;
-        justify-content: space-between;
-        padding: 80px;
-      }
-
-      .card__item {
-        background: #fff;
-        width: 30%;
-        min-height: 600px;
-        overflow: hidden;
-        padding: 2em;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
-        box-shadow: 0 0 32px -16px rgb(0, 0, 0, 0.5);
-      }
-
-      .card__figure {
-        height: 50%;
-      }
-
-      .card__image {
-        width: 90%;
-        height: 100%;
-        display: block;
-        margin: 0 auto;
-      }
-
-      .cta {
-        display: inline-block;
-        background: #6c63ff;
-        padding: 15px 30px;
-        margin: 1em;
-        text-decoration: none;
-        color: #fff;
-        margin-top: auto;
-      }
-    `
-  ],
   template: `
     <section class="card">
       <div class="card__item">
@@ -110,6 +64,49 @@ import { Component } from '@angular/core';
       </div>
     </section>
   `,
-})
+  styles: `
+      .card {
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        min-height: 100vh;
+        justify-content: space-between;
+        padding: 80px;
+      }
 
+      .card__item {
+        background: #fff;
+        width: 30%;
+        min-height: 600px;
+        overflow: hidden;
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        box-shadow: 0 0 32px -16px rgb(0, 0, 0, 0.5);
+      }
+
+      .card__figure {
+        height: 50%;
+      }
+
+      .card__image {
+        width: 90%;
+        height: 100%;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .cta {
+        display: inline-block;
+        background: #6c63ff;
+        padding: 15px 30px;
+        margin: 1em;
+        text-decoration: none;
+        color: #fff;
+        margin-top: auto;
+      }
+    `,
+})
 export class CardsComponent {}

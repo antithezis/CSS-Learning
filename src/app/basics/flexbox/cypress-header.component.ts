@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-cypress-header',
   standalone: true,
   imports: [],
-  styles: [``],
   template: ` <p>cypress-header works!</p> `,
+  styles: ``
 })
 export class CypressHeaderComponent {}

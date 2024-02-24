@@ -4,8 +4,32 @@ import { Component } from '@angular/core';
   selector: 'app-gallery',
   standalone: true,
   imports: [],
-  styles: [
-    `
+  template: `
+    <main class="gallery">
+      <h2 class="gallery__title">Galeria de imagenes Flexbox</h2>
+      <section class="gallery__container">
+        <figure class="gallery__picture">
+          <img src="assets/flexbox/gallery/image1.jpg" class="gallery__image" />
+        </figure>
+        <figure class="gallery__picture">
+          <img src="assets/flexbox/gallery/image2.jpg" class="gallery__image" />
+        </figure>
+        <figure class="gallery__picture">
+          <img src="assets/flexbox/gallery/image3.jpg" class="gallery__image" />
+        </figure>
+        <figure class="gallery__picture">
+          <img src="assets/flexbox/gallery/image4.jpg" class="gallery__image" />
+        </figure>
+        <figure class="gallery__picture">
+          <img src="assets/flexbox/gallery/image5.jpg" class="gallery__image" />
+        </figure>
+        <figure class="gallery__picture">
+          <img src="assets/flexbox/gallery/image6.jpg" class="gallery__image" />
+        </figure>
+      </section>
+    </main>
+  `,
+  styles: `
       .gallery {
         width: 90%;
         max-width: 1200px;
@@ -39,31 +63,5 @@ import { Component } from '@angular/core';
         object-fit: cover;
       }
     `,
-  ],
-  template: `
-    <main class="gallery">
-      <h2 class="gallery__title">Galeria de imagenes Flexbox</h2>
-      <section class="gallery__container">
-        <figure class="gallery__picture">
-          <img src="assets/flexbox/gallery/image1.jpg" class="gallery__image" />
-        </figure>
-        <figure class="gallery__picture">
-          <img src="assets/flexbox/gallery/image2.jpg" class="gallery__image" />
-        </figure>
-        <figure class="gallery__picture">
-          <img src="assets/flexbox/gallery/image3.jpg" class="gallery__image" />
-        </figure>
-        <figure class="gallery__picture">
-          <img src="assets/flexbox/gallery/image4.jpg" class="gallery__image" />
-        </figure>
-        <figure class="gallery__picture">
-          <img src="assets/flexbox/gallery/image5.jpg" class="gallery__image" />
-        </figure>
-        <figure class="gallery__picture">
-          <img src="assets/flexbox/gallery/image6.jpg" class="gallery__image" />
-        </figure>
-      </section>
-    </main>
-  `,
 })
 export class GalleryComponent {}

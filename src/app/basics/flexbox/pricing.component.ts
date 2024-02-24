@@ -4,27 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-pricing',
   standalone: true,
   imports: [],
-  styles: [
-    `
-      .card {
-        width: 100%;
-        min-height: 100vh;
-      }
-
-      .card__item {
-        min-width: 350px;
-        width: 30%;
-        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
-        text-align: center;
-        padding: 40px 0;
-        background: #fff;
-      }
-
-      .card__item--active {
-        background: #5175ff;
-      }
-    `,
-  ],
   template: `
     <div class="card">
       <div class="card__item">
@@ -64,5 +43,24 @@ import { Component } from '@angular/core';
       </div>
     </div>
   `,
+  styles: `
+      .card {
+        width: 100%;
+        min-height: 100vh;
+      }
+
+      .card__item {
+        min-width: 350px;
+        width: 30%;
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+        text-align: center;
+        padding: 40px 0;
+        background: #fff;
+      }
+
+      .card__item--active {
+        background: #5175ff;
+      }
+    `
 })
 export class PricingComponent {}

@@ -4,15 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-portfolio',
   standalone: true,
   imports: [],
-  styles: [`
-
-  `],
-  template: `
-    <p>
-      portfolio works!
-    </p>
-  `,
+  template: ` <p>portfolio works!</p> `,
+  styles: ``,
 })
-export class PortfolioComponent {
-
-}
+export class PortfolioComponent {}
